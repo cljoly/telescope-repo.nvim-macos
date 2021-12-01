@@ -23,6 +23,21 @@ jobs:
           mkdir -p $HOME/.config/nvim
           cp init.lua $HOME/.config/nvim
 
+      - name: Initialize repos
+        run: |
+          git init ./dep/1
+          git init ./dep/2
+          git init ./dep/3
+          git init ./dep/4
+          git init ./dep/5
+          git init ./dep/6
+          git init ./dep/7
+
+      # Loosely based on https://egeek.me/2020/04/18/enabling-locate-on-osx/
+      - name: Install glocate
+        run: |
+          brew install findutils
+
       # Runs a set of commands using the runners shell
       # Run from ssh:
       # nvim +PaqInstall

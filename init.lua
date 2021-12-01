@@ -7,5 +7,6 @@ require "paq" {
 
     'nvim-lua/plenary.nvim';
     'nvim-telescope/telescope.nvim';
-    'cljoly/telescope-repo.nvim';
+    -- 'cljoly/telescope-repo.nvim';
+    { 'cljoly/telescope-repo.nvim', branch='locate' };
 }
