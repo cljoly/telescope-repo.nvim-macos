@@ -24,7 +24,7 @@ jobs:
           cp init.lua $HOME/.config/nvim
           nvim +PaqInstall +'sleep 10 | q'
 
-      - name: Initialize repos
+      - name: Initialize repos (we should also find the ones installed by paq)
         run: |
           git init ./dep/1
           git init ./dep/2
