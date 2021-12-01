@@ -43,6 +43,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       # Run from ssh:
+      # nvim +'lua require"telescope".extensions.repo.cached_list{bin="glocate", locate_opts={"-d", "/Users/runner/locatedb"}}'
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
         with:
